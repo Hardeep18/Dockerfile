@@ -1,0 +1,9 @@
+version: '2'
+services:
+ web:
+   build:
+     context: .
+   image: myrepo/tomcat
+   ports:
+    - "9001:8080"
+   container_name: tomcat
