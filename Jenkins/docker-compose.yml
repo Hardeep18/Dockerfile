@@ -1,0 +1,9 @@
+version: '2'
+services:
+ web:
+   build:
+     context: .
+   image: myrepo/jenkins
+   ports:
+    - "9901:8080"
+   container_name: Jenkins
